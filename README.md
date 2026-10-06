@@ -24,6 +24,16 @@ Organizado por módulos. Cada módulo tiene lecciones y código.
 - `02_ejemplos.http` - Ejemplos para usar con REST Client o Insomnia
 - `03_guia_insomnia.md` - Paso a paso de cómo usar Insomnia
 
+### Módulo 5: Anatomía de una petición REST
+- `01_leccion.md` - Verbos HTTP, encabezados, cuerpo, path parameters, query parameters
+- `02_codigo.js` - Servidor con ejemplos de todos los tipos de parámetros
+- `03_ejemplos.http` - Ejemplos prácticos de peticiones con diferentes partes
+
+### Módulo 6: API Discovery
+- `01_leccion.md` - Cómo explorar APIs, Swagger/OpenAPI, patrones comunes
+- `02_servidor_con_swagger.js` - Servidor con documentación Swagger automática
+- `03_explorar_apis_publicas.md` - Guía de APIs públicas para practicar (JSONPlaceholder, GitHub, etc)
+
 ## Cómo estudiar
 
 1. Lee la lección (01_leccion.md)

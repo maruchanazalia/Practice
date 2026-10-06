@@ -1,0 +1,150 @@
+### Ejemplos de peticiones con diferentes partes
+
+### ============================================
+### GET - Sin parámetros
+### ============================================
+GET http://localhost:3000/usuarios
+
+
+### ============================================
+### GET - Con path parameter
+### ============================================
+GET http://localhost:3000/usuarios/1
+
+
+### ============================================
+### GET - Con query parameters
+### ============================================
+GET http://localhost:3000/usuarios-filtro?edad=25
+
+
+### ============================================
+### GET - Con varios query parameters
+### ============================================
+GET http://localhost:3000/usuarios-filtro?edad=30&limite=5
+
+
+### ============================================
+### GET - Con headers personalizados
+### ============================================
+GET http://localhost:3000/usuarios-con-headers
+Authorization: Bearer token123
+Custom-Header: miValorCustom
+
+
+### ============================================
+### POST - Con body JSON
+### ============================================
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Carlos",
+  "email": "carlos@mail.com",
+  "edad": 28
+}
+
+
+### ============================================
+### POST - Otro usuario
+### ============================================
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Ana",
+  "email": "ana@mail.com",
+  "edad": 22
+}
+
+
+### ============================================
+### PUT - Cambiar usuario completo
+### ============================================
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Actualizado",
+  "email": "juan.nuevo@mail.com",
+  "edad": 26
+}
+
+
+### ============================================
+### PATCH - Cambiar solo el nombre
+### ============================================
+PATCH http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Solo Nombre"
+}
+
+
+### ============================================
+### PATCH - Cambiar solo la edad
+### ============================================
+PATCH http://localhost:3000/usuarios/2
+Content-Type: application/json
+
+{
+  "edad": 31
+}
+
+
+### ============================================
+### DELETE - Eliminar usuario
+### ============================================
+DELETE http://localhost:3000/usuarios/3
+
+
+### ============================================
+### Ejemplos de respuesta (lo que ves)
+### ============================================
+
+# GET /usuarios devuelve:
+# [
+#   {
+#     "id": 1,
+#     "nombre": "Juan",
+#     "email": "juan@mail.com",
+#     "edad": 25
+#   },
+#   {
+#     "id": 2,
+#     "nombre": "María",
+#     "email": "maria@mail.com",
+#     "edad": 30
+#   }
+# ]
+
+# POST /usuarios devuelve:
+# {
+#   "id": 3,
+#   "nombre": "Carlos",
+#   "email": "carlos@mail.com",
+#   "edad": 28
+# }
+# Status: 201 Created
+
+# PUT /usuarios/1 devuelve:
+# {
+#   "id": 1,
+#   "nombre": "Juan Actualizado",
+#   "email": "juan.nuevo@mail.com",
+#   "edad": 26
+# }
+# Status: 200 OK
+
+# DELETE /usuarios/1 devuelve:
+# {
+#   "mensaje": "Eliminado",
+#   "usuario": {
+#     "id": 1,
+#     "nombre": "Juan Actualizado",
+#     "email": "juan.nuevo@mail.com",
+#     "edad": 26
+#   }
+# }
+# Status: 200 OK
