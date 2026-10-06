@@ -19,6 +19,11 @@ Organizado por módulos. Cada módulo tiene lecciones y código.
 - `02_codigo_diferentes_clientes.js` - Ejemplos de navegador, Node.js, Python, curl
 - `03_flujo_comunicacion.md` - Flujos de petición-respuesta
 
+### Módulo 4: Herramientas para trabajar y probar
+- `01_leccion.md` - Insomnia, Postman, curl, Thunder Client, REST Client
+- `02_ejemplos.http` - Ejemplos para usar con REST Client o Insomnia
+- `03_guia_insomnia.md` - Paso a paso de cómo usar Insomnia
+
 ## Cómo estudiar
 
 1. Lee la lección (01_leccion.md)
@@ -39,4 +44,13 @@ Luego abre la consola del navegador o copia los ejemplos de peticiones.
 
 ---
 
-Próximos módulos: Métodos HTTP en detalle, status codes, auth, etc.
+## Próximos módulos
+
+- Módulo 05: Métodos HTTP en detalle (GET, POST, PUT, DELETE, PATCH)
+- Módulo 06: Status codes (200, 201, 400, 404, 500, etc)
+- Módulo 07: Autenticación y autorización
+- Módulo 08: Base de datos real (no datos fake)
+- Módulo 09: Validación de datos
+- Módulo 10: Manejo de errores
+- Módulo 11: CORS
+- Módulo 12: Proyecto final

@@ -1,0 +1,78 @@
+### Ejemplos para usar con REST Client en VS Code o Insomnia
+
+### ============================================
+### GET - Traer todos los usuarios
+### ============================================
+GET http://localhost:3000/usuarios
+
+
+### ============================================
+### GET - Traer un usuario específico
+### ============================================
+GET http://localhost:3000/usuarios/1
+
+
+### ============================================
+### POST - Crear un usuario nuevo
+### ============================================
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Carlos",
+  "email": "carlos@mail.com"
+}
+
+
+### ============================================
+### POST - Crear otro usuario
+### ============================================
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Ana",
+  "email": "ana@mail.com"
+}
+
+
+### ============================================
+### PUT - Cambiar un usuario completo
+### ============================================
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+  "nombre": "Juan Actualizado",
+  "email": "juan.nuevo@mail.com"
+}
+
+
+### ============================================
+### PUT - Cambiar otro usuario
+### ============================================
+PUT http://localhost:3000/usuarios/2
+Content-Type: application/json
+
+{
+  "nombre": "María Actualizada",
+  "email": "maria.nueva@mail.com"
+}
+
+
+### ============================================
+### DELETE - Eliminar un usuario
+### ============================================
+DELETE http://localhost:3000/usuarios/3
+
+
+### ============================================
+### DELETE - Eliminar otro usuario
+### ============================================
+DELETE http://localhost:3000/usuarios/4
+
+
+### ============================================
+### GET - Usuario que no existe (404)
+### ============================================
+GET http://localhost:3000/usuarios/999
